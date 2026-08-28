@@ -1,0 +1,4 @@
+[core]
+    remote = myremote
+['remote "myremote"']
+    url = ssh://rishikesh-vadlakonda@10.52.226.144/home/rishikesh-vadlakonda/dvc_storage
