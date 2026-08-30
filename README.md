@@ -26,31 +26,32 @@ Once running, the UI is available at **http://localhost:5000**, and `q2/train.ip
 
 ## Layout
 
+```
 DA3408_DA24B034_1/
-├── report.pdf # Q1 (Technical Debt) + Q2 (Written Analysis)
-├── requirements.txt # Python dependencies for the whole project
-├── AI_DISCLOSURE.md # AI usage disclosure
-├── data.dvc # DVC pointer file (dataset)
-├── images.csv.dvc # DVC pointer file (filename index)
-├── A1_3.3.png # Q3.3 — rollback proof (v1 row count)
-├── A1_3.3.1.png # Q3.3 — rollback proof (v1 rollback checkout)
-├── .dvc/ # DVC config (SSH remote)
+├── report.pdf                          # Q1 (Technical Debt) + Q2 (Written Analysis)
+├── requirements.txt                    # Python dependencies for the whole project
+├── AI_DISCLOSURE.md                    # AI usage disclosure
+├── data.dvc                            # DVC pointer file (dataset)
+├── images.csv.dvc                      # DVC pointer file (filename index)
+├── A1_3.3.png                          # Q3.3 — rollback proof (v1 row count)
+├── A1_3.3.1.png                        # Q3.3 — rollback proof (v1 rollback checkout)
+├── .dvc/                               # DVC config (SSH remote)
 ├── .dvcignore
 ├── .gitignore
 │
-├── q2/ # Q2 — MLflow Experiment Comparison
-│ ├── train.ipynb # Training script with mlflow.log_param/log_metric
-│ ├── mlflow.db # Local MLflow tracking DB (all runs)
-│ ├── comparision_mlflow_runs.png # Run-comparison table screenshot (7 runs)
-│ ├── log_param_screenshot.png # mlflow.log_param code snippet
-│ ├── log_metric_screenshot.png # mlflow.log_metric code snippet
-│ └── mlruns/1/models/ # Logged model artifacts
+├── q2/                                  # Q2 — MLflow Experiment Comparison
+│   ├── train.ipynb                      # Training script with mlflow.log_param/log_metric
+│   ├── mlflow.db                        # Local MLflow tracking DB (all runs)
+│   ├── comparision_mlflow_runs.png      # Run-comparison table screenshot (7 runs)
+│   ├── log_param_screenshot.png         # mlflow.log_param code snippet
+│   ├── log_metric_screenshot.png        # mlflow.log_metric code snippet
+│   └── mlruns/1/models/                 # Logged model artifacts
 │
-└── q4/ # Q4 — End-to-End Reproducibility Drill
-├── PARTNER_VERIFICATION.md # Partner B's full verification report
-├── verifer_mlflow_screenshot.png # Partner B's reproduced MLflow run
-└── proof.png # Cross-machine note logged to Partner A's run
-
+└── q4/                                  # Q4 — End-to-End Reproducibility Drill
+    ├── PARTNER_VERIFICATION.md          # Partner B's full verification report
+    ├── verifer_mlflow_screenshot.png    # Partner B's reproduced MLflow run
+    └── proof.png                        # Cross-machine note logged to Partner A's run
+```
 
 
 ### Q1 — Conceptual: Technical Debt Diagnosis 
